@@ -1,4 +1,4 @@
-//
+// DimitriiTrater
 // Created by 1 on 05.10.2022.
 //
 #include <iostream>
@@ -118,6 +118,7 @@ int checkTheNumberOfTaskThreeLaboratory(int number_of_task) {
             generalFunctionOfTaskSix();
             break;
         case 7:
+            cout << generalFunctionOfTaskSeven();
             break;
         case 8:
             break;

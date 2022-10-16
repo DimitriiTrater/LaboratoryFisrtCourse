@@ -1,4 +1,4 @@
-//
+// DimitriiTrater
 // Created by 1 on 08.10.2022.
 //
 #pragma once
@@ -14,3 +14,5 @@ double generalFunctionOfTaskFour();
 int uKnowNumNew();
 
 double generalFunctionOfTaskSix();
+
+int generalFunctionOfTaskSeven();

@@ -1,4 +1,4 @@
-//
+// DimitriiTrater
 // Created by 1 on 10.10.2022.
 //
 #include <iostream>
