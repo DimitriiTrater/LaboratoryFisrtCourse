@@ -121,6 +121,7 @@ int checkTheNumberOfTaskThreeLaboratory(int number_of_task) {
             cout << generalFunctionOfTaskSeven();
             break;
         case 8:
+            generalFunctionOfTaskEight();
             break;
         case 9:
             break;

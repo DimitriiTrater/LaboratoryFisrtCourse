@@ -16,3 +16,6 @@ int uKnowNumNew();
 double generalFunctionOfTaskSix();
 
 int generalFunctionOfTaskSeven();
+
+int generalFunctionOfTaskEight();
+
