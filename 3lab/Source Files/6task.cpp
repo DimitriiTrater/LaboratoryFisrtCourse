@@ -11,8 +11,8 @@ using namespace std;
 
 double drawCircle(double radius, char symbol) {
     for (double y = radius; y >= -radius; y -= 2) {
-        for (double x = -radius; x < radius; x += 0.5) {
-            if (sqrt(pow(x, 2) + pow(y, 2)) == radius) {
+        for (double x = -radius; x <= radius; x++) {
+            if ((int)sqrt(pow(x, 2) + pow(y, 2)) == radius) {
                 cout << symbol;
             } else {
                 cout << ' ';
