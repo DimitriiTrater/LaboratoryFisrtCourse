@@ -6,6 +6,8 @@
 
 using namespace std;
 
+// todo: do this some simple, stupid
+
 int uKnowNumNew() {
     srand(time(0));
     static int right = 0;
@@ -13,7 +15,7 @@ int uKnowNumNew() {
     int answer;
     int roll = 1;
     int count = 0;
-    int people_number;
+    int people_number = 0;
     int random_value = rand() % 10;
     do {
         cout << "Computer has a number(0-10). Enter this number:";

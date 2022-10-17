@@ -19,3 +19,5 @@ int generalFunctionOfTaskSeven();
 
 int generalFunctionOfTaskEight();
 
+int generalFunctionOfTaskNine();
+
