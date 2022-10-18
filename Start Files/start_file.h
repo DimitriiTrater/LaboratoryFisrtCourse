@@ -3,7 +3,5 @@
 //
 #pragma once
 
-int inputTheNumberOfTask();
-
 int checkTheNumberOfLaboratory(int number_of_lab);
 

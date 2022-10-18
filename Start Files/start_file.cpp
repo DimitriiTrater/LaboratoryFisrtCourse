@@ -2,22 +2,14 @@
 // Created by 1 on 05.10.2022.
 //
 #include <iostream>
+#include "../Standart Tools/tools.h"
 #include "../1lab/lesson.h"
 #include "../2lab/lesson_two.h"
 #include "../3lab/Header Files/general_header.h"
+#include "../4lab/General/file_for_four_lab.h"
 
 using namespace std;
 
-int NoOne() {
-    cout << "NoOne";
-    return 0;
-}
-
-int inputTheNumberOfTask() {
-    int number = 0;
-    cin >> number;
-    return number;
-}
 
 int checkTheNumberOfTaskOneLaboratory(int number_of_task) {
     switch (number_of_task) {
@@ -137,16 +129,19 @@ int checkTheNumberOfTaskThreeLaboratory(int number_of_task) {
 }
 
 int checkTheNumberOfLaboratory(int number_of_lab) {
-    std::cout << "Enter the number of task:";
+    cout << "Enter the number of task:";
     switch (number_of_lab) {
         case 1:
-            checkTheNumberOfTaskOneLaboratory(inputTheNumberOfTask());
+            checkTheNumberOfTaskOneLaboratory(inputTheIntNumber());
             break;
         case 2:
-            checkTheNumberOfTaskTwoLaboratory(inputTheNumberOfTask());
+            checkTheNumberOfTaskTwoLaboratory(inputTheIntNumber());
             break;
         case 3:
-            checkTheNumberOfTaskThreeLaboratory(inputTheNumberOfTask());
+            checkTheNumberOfTaskThreeLaboratory(inputTheIntNumber());
+            break;
+        case 4:
+            checkTheNumberOfTaskFourLaboratory(inputTheIntNumber());
             break;
         default:
             NoOne();
