@@ -127,6 +127,7 @@ int checkTheNumberOfTaskThreeLaboratory(int number_of_task) {
             generalFunctionOfTaskNine();
             break;
         case 10:
+            generalFunctionOfTaskTen();
             break;
         default:
             NoOne();
