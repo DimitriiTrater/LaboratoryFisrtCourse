@@ -16,7 +16,7 @@ double searchLen(double x1, double y1) {
     return a;
 }
 
-double generalFunctionOfTaskThree() {
+double generalFunctionOfTaskThreeLabThree() {
     double x1, y1, x2, y2;
     int a;
     cout << "2 or 4:";

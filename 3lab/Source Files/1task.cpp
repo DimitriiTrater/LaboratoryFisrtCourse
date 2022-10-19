@@ -32,7 +32,7 @@ double kelvinToCelsius(double kelvin) {
 }
 
 // general func
-double generalFunctionOfTaskOne() {
+double generalFunctionOfTaskOneLabThree() {
     double num_of_function;
     cout << "What do you want to do?" << endl;
     cout << "1. Celsius to Fahrenheit" << endl;

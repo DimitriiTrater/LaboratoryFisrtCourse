@@ -92,34 +92,34 @@ int checkTheNumberOfTaskTwoLaboratory(int number_of_task) {
 int checkTheNumberOfTaskThreeLaboratory(int number_of_task) {
     switch (number_of_task) {
         case 1:
-            cout << generalFunctionOfTaskOne();
+            cout << generalFunctionOfTaskOneLabThree();
             break;
         case 2:
-            cout << generalFunctionOfTaskTwo();
+            cout << generalFunctionOfTaskTwoLabThree();
             break;
         case 3:
-            cout << generalFunctionOfTaskThree();
+            cout << generalFunctionOfTaskThreeLabThree();
             break;
         case 4:
-            generalFunctionOfTaskFour();
+            generalFunctionOfTaskFourLabThree();
             break;
         case 5:
-            uKnowNumNew();
+            generalFunctionOfTaskFiveLabThree();
             break;
         case 6:
-            generalFunctionOfTaskSix();
+            generalFunctionOfTaskSixLabThree();
             break;
         case 7:
-            cout << generalFunctionOfTaskSeven();
+            cout << generalFunctionOfTaskSevenLabThree();
             break;
         case 8:
-            generalFunctionOfTaskEight();
+            generalFunctionOfTaskEightLabThree();
             break;
         case 9:
-            generalFunctionOfTaskNine();
+            generalFunctionOfTaskNineLabThree();
             break;
         case 10:
-            generalFunctionOfTaskTen();
+            generalFunctionOfTaskTenLabThree();
             break;
         default:
             NoOne();

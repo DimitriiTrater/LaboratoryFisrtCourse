@@ -8,7 +8,7 @@ using namespace std;
 int checkTheNumberOfTaskFourLaboratory(int number_of_task) {
     switch (number_of_task) {
         case 1:
-            generalFunctionOfTaskOneOne();
+            generalFunctionOfTaskOneLabFour();
             break;
         case 2:
             break;

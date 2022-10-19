@@ -16,7 +16,7 @@ bool primeNumbers(int n, int i = 2) {
 }
  
 
-int generalFunctionOfTaskNine() {
+int generalFunctionOfTaskNineLabThree() {
     int n = 0;
     cout << "Enter the number: ";
     cin >> n;

@@ -14,7 +14,7 @@ void decToBin(int n) {
     cout << n % 2;
 }
 
-int generalFunctionOfTaskEight() {
+int generalFunctionOfTaskEightLabThree() {
     int n;
     cout << "Enter the n: ";
     cin >> n;

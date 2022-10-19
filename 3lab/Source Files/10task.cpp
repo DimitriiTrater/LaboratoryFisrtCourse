@@ -18,7 +18,7 @@ void hanoy(int n, char from, char free, char to) {
     hanoy(n - 1, free, from, to);
 }
 
-int generalFunctionOfTaskTen() {
+int generalFunctionOfTaskTenLabThree() {
     int disc_val = 0;
     cout << "Enter the number: ";
     cin >> disc_val;

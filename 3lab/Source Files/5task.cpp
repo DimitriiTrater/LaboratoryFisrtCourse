@@ -9,7 +9,10 @@ using namespace std;
 // todo: do this some simple, stupid
 
 int uKnowNumNew() {
+    
     srand(time(0));
+
+    // variables
     static int right = 0;
     static int no_right = 0;
     int answer;
@@ -17,6 +20,7 @@ int uKnowNumNew() {
     int count = 0;
     int people_number = 0;
     int random_value = rand() % 10;
+
     do {
         cout << "Computer has a number(0-10). Enter this number:";
         cin >> people_number;
@@ -50,5 +54,10 @@ int uKnowNumNew() {
 
     } while (roll);
     cout << random_value;
+    return 0;
+}
+
+int generalFunctionOfTaskFiveLabThree() {
+    uKnowNumNew();
     return 0;
 }

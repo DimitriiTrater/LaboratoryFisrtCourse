@@ -19,7 +19,7 @@ double searchQuadraticIfDiscrEqualZero(double &x1, double b, double discr, doubl
 }
 
 
-double generalFunctionOfTaskFour() {
+double generalFunctionOfTaskFourLabThree() {
     double a, b, c, discr, x1, x2;
     cout << "The quadratic equation has the form: ax^2 + bx + c = 0" << "\n" << "Enter the a:";
     cin >> a;

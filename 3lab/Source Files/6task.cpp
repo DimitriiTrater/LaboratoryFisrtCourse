@@ -22,7 +22,7 @@ double drawCircle(double radius, char symbol) {
     return 0;
 }
 
-double generalFunctionOfTaskSix() {
+double generalFunctionOfTaskSixLabThree() {
     double r;
     char user_char;
 

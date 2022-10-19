@@ -24,7 +24,7 @@ void minMax(int array[], int size) {
     cout << "Max: " << max << endl;
 }
 
-int generalFunctionOfTaskOneOne() {
+int generalFunctionOfTaskOneLabFour() {
     srand(time(0));
     int size = 0;
     cout << "Enter the size of the array: ";

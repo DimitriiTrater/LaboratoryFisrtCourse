@@ -16,7 +16,7 @@ int fib(int num) {
     return fib(num - 1) + fib(num - 2);
 }
 
-int generalFunctionOfTaskSeven() {
+int generalFunctionOfTaskSevenLabThree() {
     int number;
     cout << "Enter the number: ";
     cin >> number;

@@ -3,22 +3,22 @@
 //
 #pragma once
 
-double generalFunctionOfTaskOne();
+double generalFunctionOfTaskOneLabThree();
 
-double generalFunctionOfTaskTwo();
+double generalFunctionOfTaskTwoLabThree();
 
-double generalFunctionOfTaskThree();
+double generalFunctionOfTaskThreeLabThree();
 
-double generalFunctionOfTaskFour();
+double generalFunctionOfTaskFourLabThree();
 
-int uKnowNumNew();
+int generalFunctionOfTaskFiveLabThree();
 
-double generalFunctionOfTaskSix();
+double generalFunctionOfTaskSixLabThree();
 
-int generalFunctionOfTaskSeven();
+int generalFunctionOfTaskSevenLabThree();
 
-int generalFunctionOfTaskEight();
+int generalFunctionOfTaskEightLabThree();
 
-int generalFunctionOfTaskNine();
+int generalFunctionOfTaskNineLabThree();
 
-int generalFunctionOfTaskTen();
+int generalFunctionOfTaskTenLabThree();

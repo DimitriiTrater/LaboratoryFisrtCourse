@@ -23,7 +23,7 @@ double maxNumber(double first, double second, double third) {
     return max;
 }
 
-double generalFunctionOfTaskTwo() {
+double generalFunctionOfTaskTwoLabThree() {
     double a, b, c;
     int count_n;
     cout << "How many numbers?";
