@@ -1,4 +1,5 @@
 #include "../Header Files/1task.h"
+#include "../Header Files/2task.h"
 #include <iostream>
 
 using namespace std;
@@ -11,6 +12,7 @@ int checkTheNumberOfTaskFourLaboratory(int number_of_task) {
             generalFunctionOfTaskOneLabFour();
             break;
         case 2:
+            generalFunctionOfTaskTwoLabFour();
             break;
         case 3:
             break;
