@@ -3,6 +3,8 @@
 //
 #include <iostream>
 #include <ctime>
+#include <random>
+#include <chrono>
 
 
 using namespace std;
@@ -25,13 +27,14 @@ void minMax(int array[], int size) {
 }
 
 int generalFunctionOfTaskOneLabFour() {
-    srand(time(0));
+    unsigned seed = chrono::steady_clock::now().time_since_epoch().count();
+    default_random_engine eng(seed);
     int size = 0;
     cout << "Enter the size of the array: ";
     cin >> size;
     int* array = new int[size];
     for (int i = 0; i < size; i++) {
-        array[i] = rand();
+        array[i] = eng();
     }
     minMax(array, size);
     for (int i = 0; i < size; i++) {
