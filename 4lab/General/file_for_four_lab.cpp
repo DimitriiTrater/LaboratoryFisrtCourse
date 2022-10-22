@@ -1,6 +1,7 @@
 #include "../Header Files/1task.h"
 #include "../Header Files/2task.h"
 #include "../Header Files/3task.h"
+#include "../Header Files/4task.h"
 #include <iostream>
 
 using namespace std;
