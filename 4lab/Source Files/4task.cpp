@@ -1,6 +1,6 @@
 // DimitriiTrater
 // Created by 1 on 22.10.2022
-//
+// л
 #include <iostream>
 #include <random>
 #include <chrono>
