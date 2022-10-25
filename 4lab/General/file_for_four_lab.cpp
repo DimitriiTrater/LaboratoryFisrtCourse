@@ -20,6 +20,7 @@ int checkTheNumberOfTaskFourLaboratory(int number_of_task) {
             generalFunctionOfTaskThreeLabFour();
             break;
         case 4:
+            generalFunctionOfTaskFourLabFour();
             break;
         case 5:
             break;
