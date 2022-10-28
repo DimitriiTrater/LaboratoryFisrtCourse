@@ -28,11 +28,7 @@ void bubleSort(int array[], int size) {
 
 int printArray(int array[], int size) {
     for (int i = 0; i < size; i++) {
-        if (array[i] == array[i + 1]) {
-            cout << "*";
-        } else {
-            
-        }
+        
     }
     return 0;
 }
