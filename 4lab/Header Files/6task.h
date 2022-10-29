@@ -3,4 +3,4 @@
 //
 #pragma once
 
-int generalFunctionOfTaskFourLabFour();
+int generalFunctionOfTaskSixLabFour();

@@ -3,6 +3,7 @@
 #include "../Header Files/3task.h"
 #include "../Header Files/4task.h"
 #include "../Header Files/5task.h"
+#include "../Header Files/6task.h"
 #include <iostream>
 
 using namespace std;
@@ -27,6 +28,7 @@ int checkTheNumberOfTaskFourLaboratory(int number_of_task) {
             generalFunctionOfTaskFiveLabFour();
             break;
         case 6:
+            generalFunctionOfTaskSixLabFour();
             break;
         case 7:
             break;
