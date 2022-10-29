@@ -63,9 +63,9 @@ int generalFunctionOfTaskFourLabFour() {
     
     bubleSort(array, size);
     
-    for (int i = 0; i < size; i++) {
-        cout << array[i] << " ";
-    } cout << endl;
+    // for (int i = 0; i < size; i++) {
+    //     cout << array[i] << " ";
+    // } cout << endl;
     
     printArray(array, size);
     
