@@ -9,7 +9,7 @@
 using namespace std;
 
 int sumArray(int** array, int size) {
-    int sum1, sum2;
+    int sum1 = 0, sum2 = 0;
     for (int i = 0; i < size; i++) {
         sum1 += array[i][i];
         sum2 += array[i][size - 1 - i];
@@ -23,13 +23,12 @@ int generalFunctionOfTaskFiveLabFour() {
 
     int size = 20;
     int** array = new int *[size];
-    
     for(int i = 0; i < size; i++) {
-        array[i]=new int [size];
+        array[i] = new int[size];
     }
     for (int i = 0; i < size; i++) {
-        for (int j = 0; j < 20; j++) {
-            array[i][j] = eng();
+        for (int j = 0; j < size; j++) {
+            array[i][j] = eng() % 20;
         }
     }
 
