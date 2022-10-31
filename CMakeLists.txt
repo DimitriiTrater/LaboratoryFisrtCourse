@@ -42,4 +42,5 @@ add_executable(
     "4lab/Source Files/5task.cpp" "4lab/Header Files/5task.h" 
     "4lab/Source Files/6task.cpp" "4lab/Header Files/6task.h" 
     "4lab/Source Files/7task.cpp" "4lab/Header Files/7task.h"
+    "4lab/Source Files/8task.cpp" "4lab/Header Files/8task.h"
 )
