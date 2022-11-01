@@ -22,7 +22,7 @@ int generalFunctionOfTaskFiveLabFour() {
     default_random_engine eng(seed);
 
     int size = 20;
-    int** array = new int *[size];
+    int** array = new int* [size];
     for(int i = 0; i < size; i++) {
         array[i] = new int[size];
     }
