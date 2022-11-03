@@ -6,6 +6,9 @@
 #include "../Header Files/6task.h"
 #include "../Header Files/7task.h"
 #include "../Header Files/8task.h"
+#include "../Header Files/9task.h"
+#include "../Header Files/10task.h"
+
 
 #include <iostream>
 
@@ -42,6 +45,7 @@ int checkTheNumberOfTaskFourLaboratory(int number_of_task) {
         case 9:
             break;
         case 10:
+            generalFunctionOfTaskTenLabFour();
             break;
         default:
             return 1;

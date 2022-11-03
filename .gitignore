@@ -1,7 +1,9 @@
+cat .gitignore
+
 /.idea/
 
 /.vscode/
 
-/cmake-build-debug/
-
 /build/
+
+SFML/

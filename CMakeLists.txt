@@ -1,9 +1,23 @@
 # DimitriiTrater
 
 cmake_minimum_required(VERSION 3.23)
+
 project(untitled)
 
 set(CMAKE_CXX_STANDARD 14)
+
+
+set(CMAKE_EXE_LINKER_FLAGS "-static -static-libgcc")
+
+set(SFML_STATIC_LIBRARIES TRUE)
+
+set(SFML_DIR "C:/Users/1/CLionProjects/libs/SFML-2.5.1/lib/cmake/SFML")
+
+
+
+set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_LIST_DIR}/cmake_modules")
+
+find_package(SFML 2.5 REQUIRED graphics network audio window system)
 
 add_executable(
     untitled "main.cpp"
@@ -43,4 +57,9 @@ add_executable(
     "4lab/Source Files/6task.cpp" "4lab/Header Files/6task.h" 
     "4lab/Source Files/7task.cpp" "4lab/Header Files/7task.h"
     "4lab/Source Files/8task.cpp" "4lab/Header Files/8task.h"
+    "4lab/Source Files/9task.cpp" "4lab/Header Files/9task.h"
+    "4lab/Source Files/10task.cpp" "4lab/Header Files/10task.h"
+
 )
+
+target_link_libraries(untitled sfml-graphics)
