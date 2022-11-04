@@ -10,7 +10,15 @@
 using namespace std;
 
 
-
+int counter(int number, int array[], int size) {
+    int num_count = 0;
+    for (int i = 0; i < size; i++) {
+        if (number == array[i]) {
+            num_count++;
+        }
+    }
+    return num_count;
+}
 
 string charFarm(int num) {
     switch(num) {
@@ -76,8 +84,20 @@ void renderingThread(sf::RenderWindow* window)
 
 
 int drawArray(int array[], int size) {
-    //sf::Text text;
+    sf::Text text;
+    sf::Font font;
+    sf::CircleShape shape(5.f);
+    font.loadFromFile("C:\\Users\\1\\CLionProjects\\untitled\\4lab\\Source Files\\sansation.ttf");
     sf::RenderWindow window(sf::VideoMode(800, 600), "4 task");
+    
+    shape.setFillColor(sf::Color::Red);
+
+    text.setFont(font);
+    text.setCharacterSize(24);
+    text.setFillColor(sf::Color::White);
+    
+    float x = 12.0;
+    float y = 50.0;
     //window.setFramerateLimit(60);
     //window.setActive(false);
     
@@ -92,6 +112,22 @@ int drawArray(int array[], int size) {
             }
 
             window.clear();
+            int y_letter = 5;
+            int x_letter = 15;
+            int y_circle = 5;
+            int x_circle = 15;
+            for (int i = 0; i <= 20; i++) {
+                text.setString(charFarm(i));
+                text.setPosition(x_letter, y_letter);
+                window.draw(text);
+                int b = counter(i, array, size);
+                for (int a = 0; a < b; a++) {
+                        shape.setPosition(x, y_letter);
+                        window.draw(shape);
+                }
+                y_letter += 25; // new string its like \n
+            }
+            
             window.display();
         }
     }
@@ -99,9 +135,7 @@ int drawArray(int array[], int size) {
 }
 
 // for (int i = 0; i <= 20; i++) {
-//                 text.setString(charFarm(i));
-//                 text.setCharacterSize(14);
-//                 text.setFillColor(sf::Color::White);
+//                 
 //                 window.draw(text);
 //                 int b = counter(i, array, size);
 //                 for (int a = 0; a < b; a++) {
@@ -127,15 +161,6 @@ void bubleSort(int array[], int size) {
 
 }
 
-int counter(int number, int array[], int size) {
-    int num_count = 0;
-    for (int i = 0; i < size; i++) {
-        if (number == array[i]) {
-            num_count++;
-        }
-    }
-    return num_count;
-}
 
 
 

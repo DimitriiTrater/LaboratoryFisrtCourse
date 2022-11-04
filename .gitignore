@@ -1,9 +1,11 @@
 cat .gitignore
 
-/.idea/
+.idea/
 
-/.vscode/
+.vscode/
 
-/build/
+build/
 
 SFML/
+
+*.ttf
