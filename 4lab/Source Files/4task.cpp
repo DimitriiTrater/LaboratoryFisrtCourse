@@ -67,42 +67,19 @@ string charFarm(int num) {
     } return " ";
 }
 
-void renderingThread(sf::RenderWindow* window)
-{
-    // activate the window's context
-    window->setActive(true);
-
-    // the rendering loop
-    while (window->isOpen())
-    {
-        // draw...
-
-        // end the current frame
-        window->display();
-    }
-}
-
 
 int drawArray(int array[], int size) {
     sf::Text text;
     sf::Font font;
     sf::CircleShape shape(5.f);
     font.loadFromFile("C:\\Users\\1\\CLionProjects\\untitled\\4lab\\Source Files\\sansation.ttf");
-    sf::RenderWindow window(sf::VideoMode(800, 600), "4 task");
+    sf::RenderWindow window(sf::VideoMode(1800, 720), "4 task");
     
     shape.setFillColor(sf::Color::Red);
 
     text.setFont(font);
     text.setCharacterSize(24);
     text.setFillColor(sf::Color::White);
-    
-    float x = 12.0;
-    float y = 50.0;
-    //window.setFramerateLimit(60);
-    //window.setActive(false);
-    
-    //sf::Thread thread(&renderingThread, &window);
-    //thread.launch();
 
     while (window.isOpen()) {
         sf::Event event;
@@ -112,20 +89,23 @@ int drawArray(int array[], int size) {
             }
 
             window.clear();
-            int y_letter = 5;
-            int x_letter = 15;
-            int y_circle = 5;
-            int x_circle = 15;
+            float y_letter = 5;
+            float x_letter = 15;
+            float x_circle;
+            float y_circle = 10;
             for (int i = 0; i <= 20; i++) {
+                x_circle = 45;
                 text.setString(charFarm(i));
                 text.setPosition(x_letter, y_letter);
                 window.draw(text);
                 int b = counter(i, array, size);
                 for (int a = 0; a < b; a++) {
-                        shape.setPosition(x, y_letter);
+                        shape.setPosition(x_circle, y_circle);
                         window.draw(shape);
+                        x_circle += 20;
                 }
-                y_letter += 25; // new string its like \n
+                y_letter += 30; // new string its like \n
+                y_circle += 30.2;
             }
             
             window.display();
@@ -133,15 +113,6 @@ int drawArray(int array[], int size) {
     }
     return 0;
 }
-
-// for (int i = 0; i <= 20; i++) {
-//                 
-//                 window.draw(text);
-//                 int b = counter(i, array, size);
-//                 for (int a = 0; a < b; a++) {
-//                         cout << "-";
-//                 }cout << endl;
-//             }
 
 
 void bubleSort(int array[], int size) {
@@ -190,10 +161,6 @@ int generalFunctionOfTaskFourLabFour() {
     }
     
     bubleSort(array, size);
-    
-    // for (int i = 0; i < size; i++) {
-    //     cout << array[i] << " ";
-    // } cout << endl;
     
     printArray(array, size);
 
