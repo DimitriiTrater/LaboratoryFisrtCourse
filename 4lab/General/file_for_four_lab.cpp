@@ -43,6 +43,7 @@ int checkTheNumberOfTaskFourLaboratory(int number_of_task) {
             generalFunctionOfTaskEightLabFour();
             break;
         case 9:
+            generalFunctionOfTaskNineLabFour();
             break;
         case 10:
             generalFunctionOfTaskTenLabFour();
