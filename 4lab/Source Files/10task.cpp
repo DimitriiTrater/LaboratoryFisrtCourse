@@ -3,26 +3,30 @@
 
 using namespace std;
 
+void firstCondition() {
+
+}
+
+void secondCondition() {
+
+}
+
+void thirdCondition() {
+
+}
+
 
 int generalFunctionOfTaskTenLabFour() {
-    sf::RenderWindow window(sf::VideoMode(800, 600), "Life");
-    sf::CircleShape shape(100.f);
-    shape.setFillColor(sf::Color::Green);
-
-    while (window.isOpen()) {
-        sf::Event event;
-        while (window.pollEvent(event)) {
-            if (event.type == sf::Event::Closed)
-                window.close();
-        }
-
-        window.clear();
-        
-
-        window.draw(shape);
-        
-        
-        window.display();
+    int n = 5;
+    int m = 5;
+    // cout << "Enter the N x M space" << endl;
+    // cin >> n >> m;
+    int** array = new int*[n];
+    for(int i = 0; i < n; i++) {
+        array[i] = new int[m];
     }
+
+    delete[] array;
+    
     return 0;
 }
