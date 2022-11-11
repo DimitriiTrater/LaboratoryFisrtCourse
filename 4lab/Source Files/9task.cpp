@@ -37,7 +37,9 @@ int generalFunctionOfTaskNineLabFour() {
 
         for (int j = 0; j < columns; j++) {
             array[i][j] = dist(mt);
+            
             cout << array[i][j] << "\t";
+            
             if (array[i][j] == 2) {
                 two++;
             }
