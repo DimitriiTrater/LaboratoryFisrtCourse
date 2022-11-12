@@ -10,25 +10,26 @@
 using namespace std;
 
 
-void minMax(int array[], int size) {
-    int min = array[0], max = 0;
+void minMax(int array[], int size, int& max, int& min) {
+    min = array[0];
     for (int i = 0; i < size; i++) {
         if (array[i] < min) {
             min = array[i];
         }
     }
-    cout << "Min:" << min << endl;
     for (int i = 0; i < size; i++) {
         if (array[i] > max) {
             max = array[i];
         }
     }
-    cout << "Max: " << max << endl;
 }
 
 int generalFunctionOfTaskOneLabFour() {
     unsigned seed = chrono::steady_clock::now().time_since_epoch().count();
     default_random_engine eng(seed);
+
+    int max;
+    int min;
     int size = 0;
     cout << "Enter the size of the array: ";
     cin >> size;
@@ -36,7 +37,8 @@ int generalFunctionOfTaskOneLabFour() {
     for (int i = 0; i < size; i++) {
         array[i] = eng();
     }
-    minMax(array, size);
+    minMax(array, size, max, min);
+    cout << "Max: " << max << "\nMin: " << min << endl;
     for (int i = 0; i < size; i++) {
         cout << array[i] << " ";
     }

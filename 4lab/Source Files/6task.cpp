@@ -2,16 +2,15 @@
 // Created by 1 on 29.10.2022
 //
 #include <iostream>
-
+#define rows 3
+#define cols 4
 using namespace std;
 
-void transposeFunc(int matrix[2][2]) {
+void transposeFunc(int matrix[rows][cols], int nxt_matrix[cols][rows]) {
     int t;
-    for (int i = 0; i < 2; i++) {
-        for (int j = i; j < 2; j++) {
-            t = matrix[i][j];
-            matrix[i][j] = matrix[j][i];
-            matrix[j][i] = t;
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < cols; j++) {
+            nxt_matrix[j][i] = matrix[i][j];
         }
         
     }
@@ -19,14 +18,18 @@ void transposeFunc(int matrix[2][2]) {
 
 
 int generalFunctionOfTaskSixLabFour() {
-    int matrix[2][2] = {
-        {1, 2},
-        {1, 2},
+    int matrix[rows][cols] = {
+        {1, 2, 3, 4},
+        {1, 2, 3, 4},
+        {1, 2, 3, 4},
+
     };
-    transposeFunc(matrix);
-    for(int i = 0; i < 2; i++) {
-        for(int j = 0; j < 2; j++) {
-            cout << matrix[i][j] << "\t";
+
+    int nxt_matrix[cols][rows];
+    transposeFunc(matrix, nxt_matrix);
+    for(int i = 0; i < cols; i++) {
+        for(int j = 0; j < rows; j++) {
+            cout << nxt_matrix[i][j] << "\t";
         } cout << '\n';
     }
     return 0;
