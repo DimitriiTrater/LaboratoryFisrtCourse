@@ -2,7 +2,7 @@
 
 #include <iostream>
 #include "Start Files/start_file.h"
-#include "Standart Tools/tools.h"
+#include "Standard Tools/tools.h"
 
 int main() {
     std::cout << "Enter the number of laboratory:";

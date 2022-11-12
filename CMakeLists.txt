@@ -23,7 +23,7 @@ add_executable(
     untitled "main.cpp"
 
     # Some std functional
-    "Standart Tools/tools.cpp" "Standart Tools/tools.h" 
+    "Standard Tools/tools.cpp" "Standard Tools/tools.h" 
     
     # Start project
     "Start Files/start_file.cpp" "Start Files/start_file.h" 

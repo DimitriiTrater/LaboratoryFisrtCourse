@@ -2,7 +2,7 @@
 // Created by 1 on 05.10.2022.
 //
 #include <iostream>
-#include "../Standart Tools/tools.h"
+#include "../Standard Tools/tools.h"
 #include "../1lab/lesson.h"
 #include "../2lab/lesson_two.h"
 #include "../3lab/Header Files/general_header.h"
